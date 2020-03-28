@@ -1,7 +1,7 @@
 ---
 software: 
   name: goss
-  version: v0.3.6
+  version: 0.3.10
 
 file_download: "{{ software.name }}-{{ ansible_system | lower }}-amd64"
-url_download: "https://github.com/aelsabbahy/{{ software.name }}/releases/download/{{ software.version }}/{{ file_download }}"
+url_download: "https://github.com/aelsabbahy/{{ software.name }}/releases/download/v{{ software.version }}/{{ file_download }}"
